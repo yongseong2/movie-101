@@ -1,0 +1,74 @@
+// 디자인 토큰 — 로고의 팝콘 컬러(레드 · 옐로)를 포인트로 한 다크 시네마 테마
+:root {
+  color-scheme: dark;
+
+  // Surface
+  --c-bg: #0a0a0f;
+  --c-bg-elevated: #111118;
+  --c-surface: #16161f;
+  --c-surface-2: #1d1d28;
+  --c-surface-3: #262633;
+  --c-border: rgb(255 255 255 / 0.08);
+  --c-border-strong: rgb(255 255 255 / 0.16);
+
+  // Text
+  --c-text: #f5f5f8;
+  --c-text-muted: #a6a6b5;
+  --c-text-subtle: #6f6f80;
+
+  // Brand
+  --c-accent: #ff4d6d;
+  --c-accent-hover: #ff6b86;
+  --c-accent-soft: rgb(255 77 109 / 0.14);
+  --c-accent-contrast: #ffffff;
+  --c-gold: #ffc857;
+  --c-gold-soft: rgb(255 200 87 / 0.14);
+
+  // Status
+  --c-success: #3ddc97;
+  --c-danger: #ff5c5c;
+  --c-danger-soft: rgb(255 92 92 / 0.14);
+  --c-info: #6aa8ff;
+
+  // Radius
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+
+  // Elevation
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 24px 60px rgb(0 0 0 / 0.55);
+  --shadow-glow: 0 10px 40px rgb(255 77 109 / 0.28);
+
+  // Typography
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: clamp(2rem, 4vw, 2.75rem);
+  --fs-display: clamp(2.75rem, 8vw, 5.5rem);
+
+  // Layout
+  --header-h: 64px;
+  --container: 1240px;
+  --gutter: clamp(16px, 4vw, 32px);
+
+  // Motion
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 250ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+  }
+}
